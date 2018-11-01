@@ -12,6 +12,10 @@
     crossorigin="anonymous">
 
   <title>After lessons</title>
+  <script src="https://unpkg.com/scrollreveal@4"></script>
+  <script>
+    ScrollReveal({ reset: true });
+</script>
 </head>
 
 <body>
@@ -54,17 +58,17 @@
       </div>
     </nav>
     <div class="pt-5 text-white font-italic text-center" style="font-family: 'Comfortaa', cursive;">
-      <h1 class="my-5 font-weight-bold" style="text-shadow: 1px 1px 0 rgb(4, 15, 1), 2px 2px 0 rgb(4, 15, 1),3px 3px 0 rgb(4, 15, 1),4px 4px 0 rgb(4, 15, 1), 5px 5px 0 rgb(4, 15, 1);">
+      <h1 class="my-5 font-weight-bold headline" style="text-shadow: 1px 1px 0 rgb(4, 15, 1), 2px 2px 0 rgb(4, 15, 1),3px 3px 0 rgb(4, 15, 1),4px 4px 0 rgb(4, 15, 1), 5px 5px 0 rgb(4, 15, 1);">
         Програмуємо для Android
       </h1>
-      <h4 style="text-shadow: 1px 1px 0 rgb(4, 15, 1), 2px 2px 0 rgb(4, 15, 1)">
+      <h4 class="headline"style="text-shadow: 1px 1px 0 rgb(4, 15, 1), 2px 2px 0 rgb(4, 15, 1)">
         Гурток Миколаївської гімназії №3
       </h4>
     </div>
   </header>
   <div class="container-fluid mt-3 py-3">
     <div class="card-deck ">
-      <div class="card border-success mb-4 shadow">
+      <div class="card border-success mb-4 shadow widget">
         <div class="card-body">
           <h2 class="card-title text-center text-success font-weight-bold font-italic">Сучасно</h2>
           <a target="_blank" href="http://mg3.moodle.moippo.org.ua/course/index.php?categoryid=10"><img class="card-img-top mb-5"
@@ -73,7 +77,7 @@
             вистачає саме твого додатка?</p>
         </div>
       </div>
-      <div class="card border-success mb-4 shadow">
+      <div class="card border-success mb-4 shadow widget">
         <div class="card-body">
           <h2 class="card-title text-center text-success font-weight-bold font-italic">Легко</h2>
           <a target="_blank" href="http://mg3.moodle.moippo.org.ua/course/index.php?categoryid=10"> <img class="card-img-top mb-5"
@@ -82,7 +86,7 @@
             вмієш складати пазли? </p>
         </div>
       </div>
-      <div class="card border-success mb-4 shadow">
+      <div class="card border-success mb-4 shadow widget">
         <div class="card-body">
           <h2 class="card-title text-center text-success font-weight-bold font-italic">Цікаво</h2>
           <a target="_blank" href="http://ai2.appinventor.mit.edu/"> <img class="card-img-top mb-5" src="images/mit.jpg"></a>
@@ -90,7 +94,7 @@
             технологічного інституту</p>
         </div>
       </div>
-      <div class="card border-success mb-4 shadow">
+      <div class="card border-success mb-4 shadow widget">
         <div class="card-body">
           <h2 class="card-title text-center text-success font-weight-bold font-italic">Серйозно</h2>
           <a target="_blank" href="http://www.appinventor.org/jbridge"><img class="card-img-top mb-5" src="images/java.jpg"></a>
@@ -104,7 +108,7 @@
     <img src="images/learn.jpg" class="img-fluid " style="width: 100%; height:650px; ">
     <div class=" conteiner position-absolute text-white " style=" width: 100%; top:0; left:0">
       <div class="row h2 m-5 ">
-        <div class="col text-center font-weight-bold font-italic">З "MIT App Inventor 2 (AI2)", Ви зможете:</div>
+        <div class="col text-center font-weight-bold font-italic headline">З "MIT App Inventor 2 (AI2)", Ви зможете:</div>
       </div>
       <div class="row h4 pl-5 m-3 ">
         <div class="col">
@@ -198,7 +202,7 @@
           <button class="btn btn-link collapsed text-success font-weight-bold font-italic" type="button" data-toggle="collapse"
             data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="white-space: normal;">
             <p class="h2 text-left pl-5">
-              <img src="images/question.jpg" class="img-fluid mx-5">
+              <img src="images/question.jpg" class="img-fluid mx-5 ">
               Щоб розпочати...
             </p>
           </button>
@@ -230,14 +234,14 @@
   <div class="py-4 px-3" style="background-image: url('images/binary.jpg'); ">
     <div class="my-5 px-4 border border-dark rounded" style="background-color: rgba(83, 141, 6, 0.534)">
       <div class="container-fluid m-3 text-white text-center" style="background-image: url('images/smartphone.png');background-repeat: no-repeat; background-position: center; height: 650px;">
-        <p class="h2 font-weight-bold font-italic">
+        <p class="h2 font-weight-bold font-italic headline">
           Вам можуть сподобатись:
         </p>
         <div class="row">
-          <div class="col-md-6 my-3 ">
+          <div class="col-md-6 my-3 headline">
             <a href="https://hourofcode.com/ua/uk/learn"> <img src="images/hour of code.jpg" class="img-fluid rounded"></a>
           </div>
-          <div class="col-md-6 my-3 ">
+          <div class="col-md-6 my-3 headline">
             <a href="http://bober.net.ua/"> <img src="images/bober.jpg" class="img-fluid rounded"></a>
           </div>
           
@@ -279,7 +283,7 @@
             </div>
             <input class="form-control" type="text" id="email" placeholder="Ваш e-mail для відповіді">
             <div class="input-group-append">
-              <button class="btn btn-succes" onclick="formSubmint()">Надіслати</button>
+              <button class="btn btn-succes" onclick="formSubmit()">Надіслати</button>
             </div>
           </div>
         </form>
@@ -287,11 +291,15 @@
     </div>
   </footer>
   <script type="text/javascript">
-  function formSubmint() {
+  function formSubmit() {
       var question = document.getElementById ('question');      
       var email = document.getElementById ('email');
       alert('Надіслати запитання:' + question.value );
     }
+  </script>
+  <script>
+    ScrollReveal().reveal('.headline', { duration: 2000 });
+    ScrollReveal().reveal('.widget', { interval: 500 });
   </script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
